@@ -27,9 +27,6 @@ class neutron::params {
     $dhcp_agent_package = false
     $dhcp_agent_service = 'neutron-dhcp-agent'
 
-    $dnsmasq_base_package = ['dnsmasq-base']
-    $dnsmasq_utils_package = ['dnsmasq-utils']
-
     $lbaas_agent_package = false
     $lbaas_agent_service = 'neutron-lbaas-agent'
 
@@ -57,6 +54,9 @@ class neutron::params {
     $server_package     = 'neutron-server'
     $server_service     = 'neutron-server'
     $client_package     = 'python-neutronclient'
+
+    $dnsmasq_base_package = ['dnsmasq-base']
+    $dnsmasq_utils_package = ['dnsmasq-utils']
 
     $ml2_server_package = false
 
