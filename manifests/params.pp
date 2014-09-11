@@ -27,7 +27,8 @@ class neutron::params {
     $dhcp_agent_package = false
     $dhcp_agent_service = 'neutron-dhcp-agent'
 
-    $dnsmasq_packages   = ['dnsmasq', 'dnsmasq-utils']
+    $dnsmasq_base_package = ['dnsmasq-base']
+    $dnsmasq_utils_package = ['dnsmasq-utils']
 
     $lbaas_agent_package = false
     $lbaas_agent_service = 'neutron-lbaas-agent'
@@ -101,8 +102,6 @@ class neutron::params {
 
     $metadata_agent_package = 'neutron-metadata-agent'
     $metadata_agent_service = 'neutron-metadata-agent'
-
-    $dnsmasq_packages   = ['dnsmasq-base', 'dnsmasq-utils']
 
     $isc_dhcp_packages  = ['isc-dhcp-server']
 
